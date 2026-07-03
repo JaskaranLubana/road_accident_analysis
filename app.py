@@ -606,7 +606,7 @@ elif actual_tab == "City/State Analysis":
             fig_fatalities = px.pie(city_df_vis, names='Vehicle Type', values='Fatalities',
                                   title="Fatalities by Vehicle Type",
                                   color_discrete_sequence=px.colors.qualitative.Pastel)
-            st.plotly_chart(fig_fatalities, use_column_width=True)
+            st.plotly_chart(fig_fatalities, width="stretch")
         
         st.markdown("---")
         
